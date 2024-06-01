@@ -29,6 +29,7 @@ namespace test_dll
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
             var func = new MathFunc(tb1.Text).GetDerivative();
+
             
             tb2.Text = Convert.ToString(func);
         }

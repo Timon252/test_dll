@@ -5,15 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test_dll"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="470" Width="850">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <TextBox x:Name="tb1" Width="200" Height="50" Margin="0 0 300 0"/>
-        <TextBox x:Name="tb2" Width="200" Height="50" Margin="300 0 0 0"/>
-        <Button Grid.Row="1" Width="200" Height="50" x:Name="btn1" Click="btn1_Click"  />
+        
+        <TextBox x:Name="tb1" Width="200" Height="40" Margin="0,0,300,250"/>
+        <TextBox x:Name="tb2" Width="200" Height="40" Margin="300,0,0,250"/>
+        <Label Height="50" Width="300" Content="Введите то от чего хотите взять производную" Margin="80,17,450,381" />
+        <Label Height="50" Width="60" Content="Ответ" Margin="528,17,228,381" />
+        <Button Content="Расчитать"  Width="200" Height="50" x:Name="btn1" Click="btn1_Click"  />
     </Grid>
 </Window>
